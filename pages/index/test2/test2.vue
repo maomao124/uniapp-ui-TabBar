@@ -3,6 +3,7 @@
 		<button type="primary" @click="set1">setTabBarItem</button>
 		<button type="primary" @click="set2">setTabBarStyle</button>
 		<button type="primary" @click="set3">hideTabBar</button>
+		<button type="primary" @click="set4">showTabBar</button>
 	</view>
 </template>
 
@@ -59,6 +60,23 @@
 			set3() {
 				console.log('hideTabBar');
 				uni.hideTabBar({
+					success: () => {
+						uni.showToast({
+							title: '设置成功'
+						})
+					},
+					fail: (err) => {
+						console.log(err);
+						uni.showToast({
+							icon: 'error',
+							title: '设置失败'
+						})
+					}
+				})
+			},
+			set4() {
+				console.log('showTabBar');
+				uni.showTabBar({
 					success: () => {
 						uni.showToast({
 							title: '设置成功'

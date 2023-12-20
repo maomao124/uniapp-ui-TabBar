@@ -21,6 +21,22 @@
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : false
 			}
+		},
+		{
+			"path" : "pages/index/test3/test3",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/index/test4/test4",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
 		}
 	],
 	"tabBar": {
@@ -36,6 +52,14 @@
 			{
 				"text": "test2",
 				"pagePath": "pages/index/test2/test2"
+			},
+			{
+				"text": "test3",
+				"pagePath": "pages/index/test3/test3"
+			},
+			{
+				"text": "test4",
+				"pagePath": "pages/index/test4/test4"
 			}
 		]
 	},
